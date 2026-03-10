@@ -1,10 +1,15 @@
-- 👋 Hi, I’m @dmyposter
-- 👀 I’m interested in websites design
-- 🌱 I’m currently learning
-- 💞️ I’m looking to new projects
-- 📫 email me 
+# Phone Wallpaper Studio
 
-<!---
-dmyposter is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+A simple web app for creating colorful phone wallpapers.
+
+## Features
+- Gradient, stripes, and dots styles
+- Live canvas preview
+- Random color palette button
+- Export wallpaper as PNG (1170 × 2532)
+
+## Run locally
+```bash
+python3 -m http.server 8000
+```
+Then open `http://localhost:8000`.
