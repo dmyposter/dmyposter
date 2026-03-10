@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Wallpaper Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel controls">
+        <h1>Phone Wallpaper Studio</h1>
+        <p>Create a wallpaper and save it to your phone.</p>
+
+        <label>
+          Background style
+          <select id="styleType">
+            <option value="gradient">Gradient</option>
+            <option value="stripes">Stripes</option>
+            <option value="dots">Dots</option>
+          </select>
+        </label>
+
+        <label>
+          Primary color
+          <input type="color" id="primaryColor" value="#6d28d9" />
+        </label>
+
+        <label>
+          Secondary color
+          <input type="color" id="secondaryColor" value="#06b6d4" />
+        </label>
+
+        <label>
+          Accent color
+          <input type="color" id="accentColor" value="#f59e0b" />
+        </label>
+
+        <label>
+          Pattern density
+          <input type="range" id="density" min="4" max="24" value="12" />
+        </label>
+
+        <button id="randomizeBtn" type="button">Random colors</button>
+        <button id="downloadBtn" type="button">Download wallpaper</button>
+      </section>
+
+      <section class="panel preview">
+        <h2>Preview</h2>
+        <canvas id="wallpaperCanvas" width="1170" height="2532"></canvas>
+        <p class="hint">Exported size: 1170 × 2532 (iPhone 12/13/14 resolution)</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
